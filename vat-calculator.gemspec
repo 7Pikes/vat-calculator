@@ -5,7 +5,7 @@ require 'vat-calculator/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "vat-calculator"
-  gem.version       = Vat::Calculator::VERSION
+  gem.version       = VatCalculator::VERSION
   gem.authors       = ["7pikes"]
   gem.email         = ["info@7pikes.com"]
   gem.description   = %q{Gem for calculating product sum with vat, product sum without vat and product sum of vat.}

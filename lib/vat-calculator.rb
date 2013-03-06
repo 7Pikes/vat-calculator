@@ -1,7 +1,6 @@
 require "vat-calculator/version"
 
-module Vat
-  module Calculator
+module VatCalculator
     def sum_of_vat_for *args
       calculate_sum(args) do |price, vat|
         (vat * price) / (100.0 + vat)
@@ -56,12 +55,11 @@ module Vat
       end
     end
 
-  end
 end
 
 class ActiveRecord::Base
   def self.has_vat_calculator params={}
-    include Vat::Calculator
+    include VatCalculator
     vat_calculations params
   end
 end

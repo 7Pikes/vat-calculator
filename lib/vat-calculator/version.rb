@@ -1,5 +1,3 @@
-module Vat
-  module Calculator
-    VERSION = "0.0.1"
-  end
+module VatCalculator
+    VERSION = "0.0.2"
 end
